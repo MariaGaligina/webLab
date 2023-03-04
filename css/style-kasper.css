@@ -1,0 +1,32 @@
+.stage {
+	border-bottom: 3px solid #444;
+	display: flex;
+	height: 330px;
+	width: 100%;
+}
+.box {
+	align-self: flex-end;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+	
+	height: 200px;
+	margin: 0 auto 0 auto;
+	transform-origin: bottom;
+	width: 200px;
+}
+.bounce-2 {
+	animation-name: bounce-2;
+	animation-timing-function: ease;
+}
+@keyframes bounce-2 {
+	0%   { transform: translateX(0px); }
+
+	25%  { transform: translateY(-800px);
+				transform: translateX(300px);
+				  }
+	50%  { transform: translateY(-900px);
+				 transform: translateX(-900px); }
+  75%   { transform: translateY(0); 
+				 transform: translateX(0); }
+	100% { transform: translateY(0); }
+}
